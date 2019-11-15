@@ -235,4 +235,3 @@ Figure<T>::Figure(istream& is)
     centre = Centre(*this);
     area = Area(*this);
 }
-

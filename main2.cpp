@@ -9,7 +9,8 @@
 
 int main()
 {
-	cout << endl << endl << "Tuples_Tuples_Tuples_Tuples_Tuples_Tuples_Tuples_Tuples_Tuples_" << endl;
+	cout << "Tuples_Tuples_Tuples_Tuples_Tuples_Tuples_Tuples_Tuples_Tuples_" << endl << endl;
+	cout << "IntCoordinates_IntCoordinates_IntCoordinates_" << endl;
 	typedef pair<int, int> IntPair;
 	typedef pair<double, double> DoublePair;
 	IntPair a, b, c, d;
@@ -35,6 +36,7 @@ int main()
 	tuple<IntPair, IntPair, IntPair, IntPair> TrapArgs(a,b,c,d);
 	print(cout, TrapArgs);
 
+	cout << endl << endl << "DoubleCoordinates_DoubleCoordinates_DoubleCoordinates_" << endl;
 	DoublePair e, f, g, h;
 
 	e = make_pair(-0.5, -2.5);
@@ -57,4 +59,11 @@ int main()
 	h = make_pair(5.5, 0.5);
 	tuple<DoublePair, DoublePair, DoublePair, DoublePair> TrapArgsDouble(e, f, g, h);
 	print(cout, TrapArgsDouble);
+
+	e = make_pair(-1.8, -1.5);
+	f = make_pair(1.5, 4.5);
+	g = make_pair(4.5, 4.5);
+	h = make_pair(5.5, 0.5);
+	tuple<DoublePair, DoublePair, DoublePair, DoublePair> AbstrArgsDouble(e, f, g, h);
+	print(cout, AbstrArgsDouble);
 }
