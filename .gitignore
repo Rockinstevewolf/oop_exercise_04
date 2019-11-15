@@ -8,3 +8,6 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 exercise
+exercise_exec1
+exercise_exec2
+main.cpp
